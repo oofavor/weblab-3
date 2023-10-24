@@ -26,7 +26,9 @@
         </nav>
     </header>
 
-    <h1 class="page-title">Exploring the Wonders of Nature</h1>
+    <h1 class="page-title">
+        <?php echo $name . $links[$_SERVER['REQUEST_URI']] . " page" ?>
+    </h1>
 
     <article class="blog-post">
         <h2 class="section-title">Mountains and Their Majesty</h2>
@@ -41,7 +43,8 @@
             carries whispers of secrets untold. There's an inexplicable allure that draws wanderers, explorers, and
             dreamers to seek solace in the rugged embrace of the mountains.
         </p>
-        <img src="<?php echo date("s") % 2 == 0 ? $url1 : $url3 ?>" alt="Mountains" class="image">
+        <img src="<?php echo date("s") % 2 == 0 ? $url1 : $url3 ?>"
+            alt="<?php echo date("s") % 2 == 0 ? $url1 : $url3 ?>" class="image">
         <p class="text">
             Mountain ranges, with their rugged contours, tell stories of geological epochs and ever-changing landscapes.
             Weathered rock formations stand as monuments to time's unwavering passage, while alpine lakes glisten like
@@ -82,12 +85,6 @@
             dawn. The rhythmic ebb and flow of the tides are a testament to the ocean's unwavering connection to the
             moon, a celestial dance that has continued for eons.
         </p>
-        <ul class="list">
-            <li class="text">Mountain</li>
-            <li class="text">Mountain</li>
-            <li class="text">Mountain</li>
-            <li class="text">Mountain</li>
-        </ul>
         <p class="text">
 
             Beneath the surface lies a world of mesmerizing diversity, with coral reefs teeming with a vibrant spectrum
@@ -99,7 +96,8 @@
             for countless individuals. The sound of waves crashing on the shore is a soothing lullaby, a reminder of the
             ocean's enduring power and beauty.
         </p>
-        <img src="<?php echo date("s") % 2 == 0 ? $url2 : $url4 ?>" alt=" Ocean" class="image">
+        <img src="<?php echo date("s") % 2 == 0 ? $url2 : $url4 ?>"
+            alt="<?php echo date("s") % 2 == 0 ? $url2 : $url4 ?>" class="image">
         <p class="text">
 
             The ocean's vastness and depth have fueled the human imagination for centuries. Sailors and explorers have
